@@ -1,0 +1,42 @@
+title: Python 3.14 Knowledge System / 知识体系
+description: 深度讲解 Python 语言、CPython 源码、执行流程与编译加速
+author: Python Community
+email: contact@python314.com
+url: https://15525730080.github.io/python314-handbook
+baseurl: /python314-handbook
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Language
+lang: zh-CN
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Exclusions
+exclude:
+  - .gitignore
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+
+# Collections
+collections:
+  chapters:
+    output: true
+    permalink: /:collection/:name/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
